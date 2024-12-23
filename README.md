@@ -1,4 +1,4 @@
-# Projeto de Banco de Dados
+# Projeto de BD com Interface WEB
 Neste projeto, desenvolvi uma interface WEB que gera dashboards (gráficos e tabelas) e permite realizar consultas no banco de dados. Para desenvolver a interface WEB, foram utilizados no frontend: HTML, CSS e JavaScript. Já no backend foram utilizados: Python e Flask. Para criar o banco de dados foi utilizado o PostgreSQL.
 
 ![Imagem 1](Imagens/dashboard1.jpeg)
