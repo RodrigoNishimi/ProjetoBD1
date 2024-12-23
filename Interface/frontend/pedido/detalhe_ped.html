@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+        <!-- Título da Seção -->
+        <h1 class="main-title">Pedido</h1>
+
+        <table id="detalhe_ped_p" class="result-table">
+            <thead>
+                <tr>
+                    <th>Pizza</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <table id="detalhe_ped_a" class="result-table">
+            <thead>
+                <tr>
+                    <th>Acompanhamento</th>
+                    <th>Quantidade</th>
+                    <th>Tipo</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <div class="preco">
+            <h3>Preço Pedido: R$ <span id="preco_total"></span></h3>
+        </div>
+
+    </div>
+
+    <script src="detalhe_ped.js"></script>
+</body>
+</html>

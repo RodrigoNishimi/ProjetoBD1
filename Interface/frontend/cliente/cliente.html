@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+
+        <!-- Seção de Tabela para Exibição de Resultados -->
+        <h2 class="main-title">Cliente</h2>
+
+        <!-- Filtros e ordenação -->
+        <div class="filter-box">
+
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label>CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+
+            <label>Ordenar por:</label>
+            <select id="order" name="order">
+                <option></option>
+                <option value="DESC">Mais pedidos</option>
+                <option value="ASC">Menos pedidos</option>
+            </select>
+
+            <button id="btn-pesquisar">Pesquisar</button>
+
+        </div>
+
+        <table id="tcliente" class="result-table">
+            <thead>
+                <tr>
+                    <th>Nome Cliente</th>
+                    <th>CPF Cliente</th>
+                    <th>Telefone Cliente</th>
+                    <th>Email</th>
+                    <th>Endereço</th>
+                    <th>N° Pedidos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="cliente.js"></script>
+</body>
+</html>

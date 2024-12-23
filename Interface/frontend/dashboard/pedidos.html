@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+
+        <!-- TÍTULO -->
+        <div class="main-title">
+            <h2> Dashboard </h2>
+        </div>
+
+        <!-- INPUTS PARA FILTRO -->
+    <div class="input-container">
+        <label for="mes">Mês:</label>
+        <select id="mes" class="styled-input">
+            <option></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        
+        <label for="ano">Ano:</label>
+        <input type="text" id="ano" class="styled-input">
+
+        <button id="atualizar" class="styled-button">Atualizar</button>
+    </div>
+
+        <!-- CARDS -->
+        <div class="box-cards">
+            <a href="#" class="card">
+                <div class="card-title">
+                    <h3>Pedidos</h3>
+                    <span class="material-icons"></span>
+                </div>
+                <h2 id="pedidos">--</h2>
+            </a>
+
+            <a href="#" class="card">
+                <div class="card-title">
+                    <h3>Clientes</h3>
+                    <span class="material-icons"></span>
+                </div>
+                <h2 id="clientes">--</h2>
+            </a>
+        </div>
+
+        <!-- GRÁFICOS -->
+        <h2>Gráfico de Pedidos por Data</h2>
+        <div style="width: 800px;">
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

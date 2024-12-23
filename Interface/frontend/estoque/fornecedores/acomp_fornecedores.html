@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+
+        <h2 class="main-title">Fornecedores de <span id="acomp"></span></h2>
+
+        <!-- Filtros e ordenação -->
+        <div class="filter-box">
+            <label>Ordenar por:</label>
+            <select id="order" name="order">
+                <option></option>
+                <option value="ASC">Preço crescente</option>
+                <option value="DESC">Preço decrescente</option>
+            </select>
+            <button id="btn-pesquisar">Ordenar</button>
+        </div>
+
+        <!-- Tabela de Ingredientes -->
+        <table id="content" class="result-table">
+            <thead>
+                <tr>
+                    <th>CNPJ</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Qtde Fornecida</th>
+                    <th>Preço Unidade</th>
+                    <th>Preço Total (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <script src="acomp_fornecedores.js"></script>
+</body>
+</html>

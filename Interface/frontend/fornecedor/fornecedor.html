@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+
+        <!-- Seção de Tabela para Exibição de Resultados -->
+        <h2 class="main-title">Fornecedor</h2>
+
+        <!-- Filtros e ordenação -->
+        <div class="filter-box">
+
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label>CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj">
+
+            <button id="btn-pesquisar">Pesquisar</button>
+
+        </div>
+
+        <table id="tfornecedor" class="result-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CNPJ</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="fornecedor.js"></script>
+</body>
+</html>

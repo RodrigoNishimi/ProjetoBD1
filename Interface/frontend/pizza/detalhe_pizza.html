@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+
+        <h2 class="main-title">Pizza de <span id="pizza"></span></h2>
+
+        <!-- Tabela de Ingredientes -->
+        <table id="content" class="result-table">
+            <thead>
+                <tr>
+                    <th>Nome Ingrediente</th>
+                    <th>Quantidade Utilizada (kg)</th>
+                    <th>Preço (R$ / kg)</th>
+                    <th>Preço Total (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="qtde">
+            <h3>Custo Ingredientes: R$ <span id="custo_total"></span></h3>
+            <h3>Preço Venda: R$ <span id="preco_pizza"></span></h3>
+        </div>
+
+    </div>
+
+    <script src="detalhe_pizza.js"></script>
+</body>
+</html>

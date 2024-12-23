@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Menu vertical -->
+        <div class="menu-vertical">
+            <div class="menu-logo">La Fornatta <br> Pizzaria</div>
+
+            <div class="menu-button" data-submenu="submenu-dashboard">Dashboard</div>
+            <div class="submenu" id="submenu-dashboard">
+                <a data-url="dashboard/vendas.html" class="submenu-button">Vendas</a>
+                <a data-url="dashboard/pizza.html" class="submenu-button">Pizzas</a>
+            </div>
+
+            <div class="menu-button" data-submenu="submenu-consultar">Consultas</div>
+            <div class="submenu" id="submenu-consultar">
+                <a data-url="pedido/pedido.html" class="submenu-button">Pedido</a>
+                <a data-url="cliente/cliente.html" class="submenu-button">Cliente</a>
+                <a data-url="entregador/entregador.html" class="submenu-button">Entregador</a>
+                <a data-url="fornecedor/fornecedor.html" class="submenu-button">Fornecedor</a>
+                <a data-url="pizza/pizza.html" class="submenu-button">Pizza</a>
+            </div>
+
+            <div class="menu-button" data-submenu="submenu-estoque">Estoque</div>
+            <div class="submenu" id="submenu-estoque">
+                <a data-url="estoque/acompanhamento.html" class="submenu-button">Acompanhamento</a>
+                <a data-url="estoque/ingrediente.html" class="submenu-button">Ingrediente</a>
+            </div>
+
+        </div>
+
+        <!-- Área Principal com Iframe -->
+        <div class="main-content">
+            <iframe class="content-frame" id="contentFrame" src="dashboard/vendas.html"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

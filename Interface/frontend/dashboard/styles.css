@@ -1,0 +1,155 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Área principal onde o iframe está */
+.main-content {
+    background-color:#dce1eb;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 30px;
+}
+
+/* Estilo do iframe */
+.content-frame {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    overflow: hidden;
+}
+
+/* DASHBOARD */
+
+.main-title {
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+
+.box-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box-cards2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black
+}
+
+.inverted-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #fff
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* GRÁFICOS */
+canvas#grafico {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+canvas#grafico2 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Container para inputs lado a lado sem fundo e borda */
+.input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Espaçamento entre os inputs e o botão */
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center; /* Alinha os itens ao centro */
+}
+
+/* Inputs estilizados */
+.styled-input {
+    width: 120px; /* Largura reduzida para os inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Foco nos inputs */
+.styled-input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+    outline: none;
+}
+
+/* Botão estilizado */
+.styled-button {
+    padding: 10px 15px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover no botão */
+.styled-button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+.grafico_t {
+    margin-bottom: 20px;
+}
+
+.div-graficos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}

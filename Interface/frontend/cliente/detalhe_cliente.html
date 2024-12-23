@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+        <!-- Título da Seção -->
+        <h1 class="main-title">Cliente <span id="cliente"></span></h1>
+
+        <!-- Filtros e ordenação -->
+        <div class="filter-box">
+
+            <label>ID:</label>
+            <input type="text" id="id" name="id">
+
+            <label>Status:</label>
+            <select id="status" name="status">
+                <option></option>
+                <option value="Entregue">Entregue</option>
+                <option value="Em preparo">Em preparo</option>
+                <option value="Cancelado">Cancelado</option>
+            </select>
+
+            <button id="btn-pesquisar">Pesquisar</button>
+
+        </div>
+
+        <table id="tpedidos" class="result-table">
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Data</th>
+                    <th>Endereço</th>
+                    <th>CPF Entregador</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <div class="contador">
+            <h3>N° Pedidos: <span id="num_pedidos"></span></h3>
+            <h3>N° Cupons Desconto: <span id="cupom"></span></h3>
+        </div>
+
+    </div>
+
+    <script src="detalhe_cliente.js"></script>
+</body>
+</html>

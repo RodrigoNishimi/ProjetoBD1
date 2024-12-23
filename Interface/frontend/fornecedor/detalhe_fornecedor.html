@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+        <!-- Título da Seção -->
+        <h1 class="main-title"><span id="nome"></span></h1>
+        <h1 class="main-title">CNPJ: <span id="cnpj"></span></h1>
+        <h1 class="main-title">Itens Fornecidos</h1>
+
+        <table id="ingred" class="result-table">
+            <thead>
+                <tr>
+                    <th>ID Ingrediente</th>
+                    <th>Nome</th>
+                    <th>Qtde Fornecida</th>
+                    <th>Preço kg (R$)</th>
+                    <th>Preço Total (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <table id="acomp" class="result-table">
+            <thead>
+                <tr>
+                    <th>ID Acompanhamento</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Qtde Fornecida</th>
+                    <th>Preço Unidade (R$)</th>
+                    <th>Preço Total (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <div class="preco">
+            <h3>Produtos Fornecidos: <span id="itens"></span></h3>
+        </div>
+
+    </div>
+
+    <script src="detalhe_fornecedor.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="pizza.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Área Principal -->
+    <div class="main-content">
+        <!-- Título da Seção -->
+        <h1 class="main-title">Pizzas</h1>
+
+        <!-- Filtros e ordenação -->
+        <div class="filter-box">
+
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label>Ordenar por:</label>
+            <select id="order" name="order">
+                <option></option>
+                <option value="q_desc">Mais Vendidas</option>
+                <option value="q_asc">Menos Vendidas</option>
+                <option value="v_desc">Mais Lucrativas</option>
+                <option value="v_asc">Menos Lucrativas</option>
+            </select>
+
+            <button id="btn-pesquisar">Pesquisar</button>
+
+        </div>
+
+        <!-- Seção de Tabela para Exibição de Resultados -->
+        <div class="tabela_grafico">
+            <table id="tpizza" class="result-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>N° Vendas</th>
+                        <th>Preço (R$)</th>
+                        <th>Venda Total (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas de pedidos serão inseridas aqui -->
+                </tbody>
+            </table>
+            <div class="chart-container">
+                <canvas id="pizzaChart"></canvas>
+                <canvas id="pizzaChart2"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="pizza.js"></script>
+</body>
+</html>

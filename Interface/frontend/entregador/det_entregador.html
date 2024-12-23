@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Banco de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Área Principal -->
+    <div class="main-content">
+        <!-- Título da Seção -->
+        <h1 class="main-title">Entregador <span id="nome"></span></h1>
+        <h1 class="main-title">CPF: <span id="cpf"></span></h1>
+
+        <table id="tpedidos" class="result-table">
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>CPF Cliente</th>
+                    <th>Data</th>
+                    <th>Endereço</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de pedidos serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <div class="contador">
+            <h3>N° Entregas: <span id="num_entregas"></span></h3>
+        </div>
+
+    </div>
+
+    <script src="det_entregador.js"></script>
+</body>
+</html>
