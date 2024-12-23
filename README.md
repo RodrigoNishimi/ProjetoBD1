@@ -34,43 +34,59 @@ O arquivo está no seguinte local: `Projeto_BD1/Interface/backend/servicos/datab
 ### Backend
 Observação: No Windows, utilize o **Prompt de Comando (cmd)** em vez do **PowerShell**. No PowerShell, configurações adicionais são necessárias para executar o ambiente virtual do Python, no cmd isso não é necessário.
 
-**1. Abra o terminal (cmd) e acesse o diretório do "backend"**
+**1. Abra o terminal (cmd) e acesse o diretório "backend"**
 
 - Exemplo de comando no Windows:
 
-`cd OneDrive\Área de Trabalho\Projeto_BD1\Interface\backend`
+```bash
+cd OneDrive\Área de Trabalho\Projeto_BD1\Interface\backend
+```
 
 - Exemplo de comando no Linux:
 
-`cd Área de Trabalho/Projeto_BD1/Interface/backend`
+```bash
+cd Área de Trabalho/Projeto_BD1/Interface/backend
+```
 
 **2. Crie o Ambiente Virtual em python e inicie-o**
 
 - Comandos no Windows:
 
-`python -m venv venv`
-`.\venv\Scripts\Activate`
+```bash
+python -m venv venv
+
+.\venv\Scripts\Activate
+```
 
 - Comandos no Linux:
 
-`python3 -m venv venv`
-`source venv/bin/activate`
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
 
 **3. Instale as dependências para o Backend**
 
 - Execute o comando: 
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 **4. Rode o servidor backend**
 
 - No Windows:
 
-`python main.py`
+```bash
+python main.py
+```
 
 - No Linux:
 
-`python3 main.py`
+```bash
+python3 main.py
+```
 
 ### Frontend
 **1. Instale a extensão Live Server** 
@@ -79,4 +95,4 @@ Vá na área de extensões do Visual Studio Code e instale a extensão Live Serv
 
 **2. Rode o Frontend**
 
-Abra o arquivo "index.html" no VS Code que está em : "Projeto_BD1/Interface/frontend" e clique no botão "Go Live" (no canto inferior direito). Isso iniciará o servidor do frontend e abrirá a interface web no navegador.
+Abra o arquivo "index.html" no VS Code que está em : `Projeto_BD1/Interface/frontend/index.html` e clique no botão "Go Live" (no canto inferior direito). Isso iniciará o servidor do frontend e abrirá a interface web no navegador.
