@@ -5,13 +5,14 @@ Neste projeto, desenvolvi uma interface WEB que gera dashboards (gráficos e tab
 ![Imagem 2](Imagens/dashboard2.jpeg)
 
 ## Requisitos
-- PostgreSQL 16.6
-- Python 3.12.7
+- **Python**: 3.12.7
+- **PostgreSQL**: 16.6
 
-**Observação:** No Windows, pode ser necessário instalar o Microsoft C++ Build Tools, pois o Python depende de suporte para compilar alguns componentes em C.
+
+**Observação:** No Windows, pode ser necessário instalar o **Microsoft C++ Build Tools**, pois o Python depende de suporte para compilar alguns componentes em C.
 
 ### Opcional:
-Para rodar o frontend (interface web) utilizamos o VS Code com a seguinte extensão do Visual Studio Code: "Live Server (Ritwick Dey)".
+Para rodar o frontend (interface web) utilizamos o **Visual Studio Code** com a seguinte extensão: **Live Server (Ritwick Dey)**.
 
 ## Etapas para rodar o projeto
 
@@ -19,20 +20,20 @@ Para rodar o frontend (interface web) utilizamos o VS Code com a seguinte extens
 
 **1. Criar o Banco de Dados** 
 
-- Acesse o "pgAdmin 4" (ou outra interface gráfica do PostgreSQL) e crie um novo banco de dados;
+- Acesse o "**pgAdmin 4**" (ou outra interface gráfica do PostgreSQL) e crie um novo banco de dados;
 
-- Clique com o botão direito sobre o banco de dados e clique em "Query Tool";
+- Clique com o botão direito sobre o banco de dados e clique em "**Query Tool**";
 
-- Abra o arquivo "script.sql" localizado no diretório "Código SQL" do projeto e execute as linhas de código do script na "Query Tool" do "pgAdmin 4".
+- Abra o arquivo "**script.sql**" localizado no diretório "**Código_SQL**" do projeto e execute as linhas do script na "**Query Tool**" do "**pgAdmin 4**".
 
 **2. Editar o arquivo de conexão do backend com o banco de dados** 
 
-No arquivo de conexão do banco de dados com o backend (conector.py) é necessário alterar o 'user', 'password' e 'dbname' para as credenciais do seu PostgreSQL e o nome que você escolheu quando criou o banco de dados.
+No arquivo de conexão do banco de dados com o backend (**conector.py**) é necessário alterar o `user`, `password` e `dbname` para as credenciais do seu **PostgreSQL** e o nome que você escolheu quando criou o banco de dados.
 
 O arquivo está no seguinte local: `Projeto_BD1/Interface/backend/servicos/database/conector.py`
 
 ### Backend
-Observação: No Windows, utilize o **Prompt de Comando (cmd)** em vez do **PowerShell**. No PowerShell, configurações adicionais são necessárias para executar o ambiente virtual do Python, no cmd isso não é necessário.
+**Observação:** No Windows, utilize o **Prompt de Comando (cmd)** em vez do **PowerShell**. No PowerShell, configurações adicionais são necessárias para executar o ambiente virtual do Python, no cmd isso não é necessário.
 
 **1. Abra o terminal (cmd) e acesse o diretório "backend"**
 
@@ -54,7 +55,6 @@ cd Área de Trabalho/Projeto_BD1/Interface/backend
 
 ```bash
 python -m venv venv
-
 .\venv\Scripts\Activate
 ```
 
@@ -62,7 +62,6 @@ python -m venv venv
 
 ```bash
 python3 -m venv venv
-
 source venv/bin/activate
 ```
 
